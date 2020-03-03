@@ -1,0 +1,904 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title></title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="style/style.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/all.css" integrity="sha384-REHJTs1r2ErKBuJB0fCK99gCYsVjwxHrSU0N7I1zl9vZbggVJXRMsv/sLlOAGb4M" crossorigin="anonymous"
+    />
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+</head>
+<body>
+	<!-- sidebar mobile -->
+	<nav id="sidebar_mobile" class="sidebar_mobile">
+		<!-- khu vực tắt -->
+		<div class="nav_tat"></div>
+		<!-- sidebar mobile show -->
+		<ul id="list_sidebar" class="list_sidebar">
+			<li class="close_sidebar" id="tat"><i class="fas fa-times"></i></li>
+			<li><a class="sidebar_logo" href="index.html"><img src="image/group8d7.png"></a></li>
+			
+			<li>
+				<a href="gioithieu.html">GIỚI THIỆU</a><span><i id="close_item_gt" class="fas fa-chevron-down"></i></span>
+				<ul id="list_item_gt" class="show_menu_sidebar hiden_menu_sidebar">
+					<li>
+						<a href="gioithieu.html">&gt Giới thiệu chung</a>
+					</li>
+					<li>
+						<a href="chucnangnv_gt.html">&gt Chức năng nhiệm vụ</a>
+					</li>
+					<li>
+						<a href="cocautochuc_gt.html">&gt Cơ cấu tổ chức</a>
+					</li>
+					<li>
+						<a href="duan_gt.html">&gt Dự án World Bank</a>
+					</li>
+				</ul>
+			</li>
+			<li>
+				<a href="tintuc.html">TIN TỨC</a><span><i id="close_item_tt" class="fas fa-chevron-down"></i></span>
+				<ul id="list_item_tt" class="show_menu_sidebar hiden_menu_sidebar">
+					<li>
+						<a href="tinhd.html">&gt Tin hoạt động</a>
+					</li>
+					<li>
+						<a href="tinmt.html">&gt Tin môi trường</a>
+					</li>
+					<li>
+						<a href="##">&gt Tin khoa học công nghệ</a>
+					</li>
+					<li>
+						<a href="##">&gt Tin tức văn phòng GEF Việt Nam</a>
+					</li>
+				</ul>
+			</li>
+			<li>
+				<a href="hoatdongnghiepvu.html">HOẠT ĐỘNG NGHIỆP VỤ</a><span><i id="close_item_nv" class="fas fa-chevron-down"></i></span>
+				<ul id="list_item_nv" class="show_menu_sidebar hiden_menu_sidebar">
+					<li>
+						<a href="chovay.html">&gt Cho vay lãi suất ưu đãi</a>
+					</li>
+					<li>
+						<a href="##">&gt Tài trợ và đông tài trợ</a>
+					</li>
+					<li>
+						<a href="##">&gt Kinh tế xanh</a>
+					</li>
+					<li>
+						<a href="##">&gt Ký quỹ cải tạo phục hồi môi trường trong khai thác khoáng sản</a>
+					</li>
+					<li>
+						<a href="##">&gt Văn phòng GEF Việt Nam</a>
+					</li>
+					<li>
+						<a href="##">&gt Các hoạt động khác</a>
+					</li>
+				</ul>
+			</li>
+			<li>
+				<a href="hoatdongquocte.html">HOẠT ĐỘNG QUỐC TẾ & GEF</a><span><i id="close_item_hd" class="fas fa-chevron-down"></i></span>
+				<ul id="list_item_hd" class="show_menu_sidebar hiden_menu_sidebar">
+					<li>
+						<a href="hoptac_pt.html">&gt Hợp tác phát triển</a>
+					</li>
+					<li>
+						<a href="##">&gt Dự án tài trợ GEF</a>
+					</li>
+				</ul>
+			</li>
+			<li>
+				<a href="hotro.html">HỖ TRỢ KHÁCH HÀNG</a><span><i id="close_item_sp" class="fas fa-chevron-down"></i></span>
+				<ul id="list_item_sp" class="show_menu_sidebar hiden_menu_sidebar">
+					<li>
+						<a href="hotro_kh.html">&gt Hướng dẫn hồ sơ hỗ trợ lãi suất vay vốn sau đầu tư</a>
+					</li>
+					<li>
+						<a href="##">&gt Hướng dẫn hồ sơ ký quỹ</a>
+					</li>
+					<li>
+						<a href="##">&gt Hướng dẫn hồ sơ tài trợ</a>
+					</li>
+					<li>
+						<a href="##">&gt Hướng dẫn hồ sơ vay vốn</a>
+					</li>
+					<li>
+						<a href="##">&gt Hướng dẫn hồ sơ xin hỗ trợ dự án và hoạt động CDM</a>
+					</li>
+					<li>
+						<a href="##">&gt Hướng dẫn hồ sơ xin trợ giá, hỗ trợ giá sản phẩm</a>
+					</li>
+				</ul>
+			</li>
+			<li>
+				<a href="vanbanvabaocao.html">VĂN BẢN QPPL & BÁO CÁO</a><span><i id="close_item_bc" class="fas fa-chevron-down"></i></span>
+				<ul id="list_item_bc" class="show_menu_sidebar hiden_menu_sidebar">
+					<li>
+						<a href="vanban_qppl.html">&gt Văn bản quy phạm pháp luật</a>
+					</li>
+					<li>
+						<a href="##">&gt Văn bản quỹ BVMTVN</a>
+					</li>
+					<li>
+						<a href="##">&gt Báo cáo thường niên</a>
+					</li>
+					<li>
+						<a href="##">&gt Văn phòng GEF Việt Nam</a>
+					</li>
+				</ul>
+			</li>
+		</ul>
+	</nav>
+	<!-- phần đâu trang web, banner -->
+	<header class="container-fluid">
+		<div class="container">
+			<div id="header_top" class="header_top">
+				<a class="linkhome" href="index.html">
+					<img class="banner" src="image/banner.jpg">
+				</a>
+			</div>
+		</div>
+	</header>
+	<!-- thanh menu head -->
+	<nav class="nav_sticky container-fluid">
+		<div class="container">
+			<div class="menu">
+				<div class="home_menu">
+					<a class="link_home_menu" href="index.html">
+						<i class="fas fa-home"></i>
+					</a>
+				</div>
+				<!-- danh sách các chức năng -->
+				<ul class="list_menu">
+					<li class="list_menu_gt">
+						<a href="gioithieu.html">GIỚI THIỆU</a>
+						<!-- menu cấp 2 -->
+						<ul class="show_menu show_gt">
+							<li>
+								<a href="gioithieu.html">&gt Giới thiệu chung</a>
+							</li>
+							<li>
+								<a href="chucnangnv_gt.html">&gt Chức năng nhiệm vụ</a>
+							</li>
+							<li>
+								<a href="cocautochuc_gt.html">&gt Cơ cấu tổ chức</a>
+							</li>
+							<li>
+								<a href="duan_gt.html">&gt Dự án World Bank</a>
+							</li>
+						</ul>
+					</li>
+					<li class="list_menu_tt">
+						<a href="tintuc.html">TIN TỨC</a>	
+						<!-- menu cấp 2 -->
+						<ul class="show_menu show_tt">
+							<li>
+								<a href="tinhd.html">&gt Tin hoạt động</a>
+							</li>
+							<li>
+								<a href="tinmt.html">&gt Tin môi trường</a>
+							</li>
+							<li>
+								<a href="##">&gt Tin khoa học công nghệ</a>
+							</li>
+							<li>
+								<a href="##">&gt Tin tức văn phòng GEF Việt Nam</a>
+							</li>
+						</ul>
+					</li>
+					<li class="list_menu_nv">
+						<a href="hoatdongnghiepvu.html">HOẠT ĐỘNG NGHIỆP VỤ</a>
+						<!-- menu cấp 2 -->
+						<ul class="show_menu show_nv">
+							<li>
+								<a href="chovay.html">&gt Cho vay lãi suất ưu đãi</a>
+							</li>
+							<li>
+								<a href="##">&gt Tài trợ và đông tài trợ</a>
+							</li>
+							<li>
+								<a href="##">&gt Kinh tế xanh</a>
+							</li>
+							<li>
+								<a href="##">&gt Ký quỹ cải tạo phục hồi môi trường trong khai thác khoáng sản</a>
+							</li>
+							<li>
+								<a href="##">&gt Văn phòng GEF Việt Nam</a>
+							</li>
+							<li>
+								<a href="##">&gt Các hoạt động khác</a>
+							</li>
+						</ul>
+					</li>
+					<li class="list_menu_qt">
+						<a href="hoatdongquocte.html">HOẠT ĐỘNG QUỐC TẾ & GEF</a>
+						<!-- menu cấp 2 -->
+						<ul class="show_menu show_qt">
+							<li>
+								<a href="hoptac_pt.html">&gt Hợp tác phát triển</a>
+							</li>
+							<li>
+								<a href="##">&gt Dự án tài trợ GEF</a>
+							</li>
+						</ul>
+					</li>
+					<li class="list_menu_sp">
+						<a href="hotro.html">HỖ TRỢ KHÁCH HÀNG</a>
+						<ul class="show_menu show_sp">
+							<li>
+								<a href="hotro_kh.html">&gt Hướng dẫn hồ sơ hỗ trợ lãi suất vay vốn sau đầu tư</a>
+							</li>
+							<li>
+								<a href="##">&gt Hướng dẫn hồ sơ ký quỹ</a>
+							</li>
+							<li>
+								<a href="##">&gt Hướng dẫn hồ sơ tài trợ</a>
+							</li>
+							<li>
+								<a href="##">&gt Hướng dẫn hồ sơ vay vốn</a>
+							</li>
+							<li>
+								<a href="##">&gt Hướng dẫn hồ sơ xin hỗ trợ dự án và hoạt động CDM</a>
+							</li>
+							<li>
+								<a href="##">&gt Hướng dẫn hồ sơ xin trợ giá, hỗ trợ giá sản phẩm</a>
+							</li>
+						</ul>
+					</li>
+					<li class="list_menu_bc">
+						<a href="vanbanvabaocao.html">VĂN BẢN QPPL & BÁO CÁO</a>
+						<!-- menu cấp 2 -->
+						<ul class="show_menu show_bc">
+							<li>
+								<a href="vanban_qppl.html">&gt Văn bản quy phạm pháp luật</a>
+							</li>
+							<li>
+								<a href="##">&gt Văn bản quỹ BVMTVN</a>
+							</li>
+							<li>
+								<a href="##">&gt Báo cáo thường niên</a>
+							</li>
+							<li>
+								<a href="##">&gt Văn phòng GEF Việt Nam</a>
+							</li>
+						</ul>
+					</li>
+				</ul>
+
+				<!-- nút bấm menu responsive -->
+				<div class="menu_965">
+					<button id="width_965_bt" class="width_965_bt"><i class="fas fa-bars"></i></button>
+				</div>
+				<!-- thanh tìm kiếm -->
+				<div class="nav_menu_search">
+					<div class="nav_manu_search_group">
+						<input class="search_menu" type="text" name="search" placeholder="Nhập từ khóa cần tìm ...">
+						<button class="menu_search_bt"><a href="##"><i class="fas fa-search"></i></a></button>
+					</div>
+				</div>
+				
+			</div>
+		</div>
+	</nav>
+	<!-- thanh công cụ -->
+	<nav class="container-fluid">
+		<div class="container nav_full_congcu">
+			<!-- thời gian hiện tại -->
+			<div class="nav_congcu">
+				<div class="calendar">
+					<i class="fas fa-calendar-alt"></i> <span id="calendar_time">time</span>
+				</div>
+			</div>
+			<!-- các công cụ -->
+			<div class="cong_cu">
+				<div class="cong_cu_clone">
+					<a href="##">
+						<i class="fas fa-folder-open"></i>
+						<span>Thư viện |</span>
+					</a>
+				</div>
+				<div class="cong_cu_clone">
+					<a href="##">
+						<i class="fas fa-comments"></i>
+						<span> hỏi đáp |</span>
+					</a>
+				</div>
+				<div class="cong_cu_clone">
+					<a href="##">
+						<i class="fas fa-exclamation-circle"></i>
+						<span> liên hệ |</span>
+					</a>
+				</div>
+				<div class="cong_cu_clone">
+					<a href="##">
+						<i class="fas fa-envelope"></i>
+						<span> Thử điện tử |</span>
+					</a>
+				</div>
+				<div class="cong_cu_clone">
+					<a href="##">
+						<i class="fas fa-rss-square"></i>
+						<span> RSS |</span>
+					</a>
+				</div>
+				<div class="cong_cu_clone">
+					<a href="##">
+						<i class="fas fa-rss-square"></i>
+						<span> RSS |</span>
+					</a>
+				</div>
+				<div class="cong_cu_clone">
+					<a href="##">
+						<i class="fas fa-sitemap"></i>
+						<span> Sơ đồ |</span>
+					</a>
+				</div>
+				<div class="cong_cu_clone">
+					<a href="##">
+						<i class="fas fa-sign-in-alt"></i>
+						<span> Trang quản trị |</span>
+					</a>
+				</div>
+				<!-- chọn ngôn ngữ -->
+				<div class="cong_cu_clone">
+					<img width="25" height="15" src="image/comy.png">
+					<span> English</span>
+				</div>
+			</div>
+		</div>
+	</nav>
+	<!-- phần chính của web -->
+	<main class="main_tintuc container-fluid">
+		<div class="container">
+			<div class="row no-gutters">
+				<!-- trọng tâm của web -->
+
+				<div class="col-xs-12 col-sm-12 col-md-12 col-lg-9">
+					<!-- phần giới tin tức -->
+					<div class="tt">
+						<div class="gt_link">
+							<a href="index.html">Trang chủ / </a>
+							<span>Hỗ trợ khách hàng</span>
+						</div>
+						<div class="chuyenmuc">
+							<span>Hiển thị: </span>
+							<select onchange="location = this.value;">
+								<option value="gioithieu.html">Giới thiệu</option>
+								<option value="tintuc.html">Tin tức</option>
+								<option value="tinhd.html">&nbsp;&nbsp;&nbsp;Tin hoạt động</option>
+								<option value="tinmt.html">&nbsp;&nbsp;&nbsp;Tin môi trường</option>
+								<option value="##">&nbsp;&nbsp;&nbsp;Tin khoa học công nghệ</option>
+								<option value="##">Hợp tác phát triển & GEF</option>
+								<option value="##">&nbsp;&nbsp;&nbsp;Tin tức văn phòng GEF Việt Nam</option>
+								<option value="hoptac_pt.html">&nbsp;&nbsp;&nbsp;Hợp tác phát triển</option>
+								<option value="hotro.html" selected="true">Hỗ trợ khách hàng</option>
+							</select>
+						</div>
+						<div class="tt_title">
+							<p>Hỗ trợ khách hàng<span>(10 bài viết)</span></p>
+						</div>
+						<div class="tintuc">
+							<div class="row">
+								<div class="tintuc_image col-xs-12 col-sm-12 col-md-3">
+									<img src="image/main_tin1.jpg">
+								</div>
+								<div class="tintuc_t col-xs-12 col-sm-12 col-md-9">
+									<a href="##">Bộ trưởng Trần Hồng Hà chủ trì họp Dự án Luật sửa đổi, bổ sung Luật Bảo vệ môi trường</a>
+									<p>​Phát biểu tại cuộc họp, Bộ trưởng Trần Hồng Hà đánh giá cao nỗ lực của các thành viên Ban soạn thảo, Tổ biên tập trong việc nghiên cứu, tiếp thu và hoàn thiện những ý kiến bổ sung, đóng góp của các thành viên trong các kỳ họp trước. Tổ biên tập đã nghiên cứu, rà soát các Nghị quyết, văn bản và nhu cầu thực tế để đề xuất, bổ sung các chính sách phù hợp, tạo các hàng rào kỹ thuật cần thiết để vừa phát triển, vừa bảo vệ môi trường (BVMT).</p><br>
+									<span><i class="fas fa-calendar-alt"></i> Thứ 3, 10/12/2019 - 15:50 GMT+7 <a href="##">xem tiếp >></a></span>
+								</div>
+							</div>
+							<hr>
+							<div class="row">
+								<div class="tintuc_image col-xs-12 col-sm-12 col-md-3">
+									<img src="image/main_tin1.jpg">
+								</div>
+								<div class="tintuc_t col-xs-12 col-sm-12 col-md-9">
+									<a href="##">Bộ trưởng Trần Hồng Hà chủ trì họp Dự án Luật sửa đổi, bổ sung Luật Bảo vệ môi trường</a>
+									<p>​Phát biểu tại cuộc họp, Bộ trưởng Trần Hồng Hà đánh giá cao nỗ lực của các thành viên Ban soạn thảo, Tổ biên tập trong việc nghiên cứu, tiếp thu và hoàn thiện những ý kiến bổ sung, đóng góp của các thành viên trong các kỳ họp trước. Tổ biên tập đã nghiên cứu, rà soát các Nghị quyết, văn bản và nhu cầu thực tế để đề xuất, bổ sung các chính sách phù hợp, tạo các hàng rào kỹ thuật cần thiết để vừa phát triển, vừa bảo vệ môi trường (BVMT).</p><br>
+									<span><i class="fas fa-calendar-alt"></i> Thứ 3, 10/12/2019 - 15:50 GMT+7 <a href="##">xem tiếp >></a></span>
+								</div>
+							</div>
+							<hr>
+							<div class="row">
+								<div class="tintuc_image col-xs-12 col-sm-12 col-md-3">
+									<img src="image/main_tin1.jpg">
+								</div>
+								<div class="tintuc_t col-xs-12 col-sm-12 col-md-9">
+									<a href="##">Bộ trưởng Trần Hồng Hà chủ trì họp Dự án Luật sửa đổi, bổ sung Luật Bảo vệ môi trường</a>
+									<p>​Phát biểu tại cuộc họp, Bộ trưởng Trần Hồng Hà đánh giá cao nỗ lực của các thành viên Ban soạn thảo, Tổ biên tập trong việc nghiên cứu, tiếp thu và hoàn thiện những ý kiến bổ sung, đóng góp của các thành viên trong các kỳ họp trước. Tổ biên tập đã nghiên cứu, rà soát các Nghị quyết, văn bản và nhu cầu thực tế để đề xuất, bổ sung các chính sách phù hợp, tạo các hàng rào kỹ thuật cần thiết để vừa phát triển, vừa bảo vệ môi trường (BVMT).</p><br>
+									<span><i class="fas fa-calendar-alt"></i> Thứ 3, 10/12/2019 - 15:50 GMT+7 <a href="##">xem tiếp >></a></span>
+								</div>
+							</div>
+							<hr>
+							<div class="row">
+								<div class="tintuc_image col-xs-12 col-sm-12 col-md-3">
+									<img src="image/main_tin1.jpg">
+								</div>
+								<div class="tintuc_t col-xs-12 col-sm-12 col-md-9">
+									<a href="##">Bộ trưởng Trần Hồng Hà chủ trì họp Dự án Luật sửa đổi, bổ sung Luật Bảo vệ môi trường</a>
+									<p>​Phát biểu tại cuộc họp, Bộ trưởng Trần Hồng Hà đánh giá cao nỗ lực của các thành viên Ban soạn thảo, Tổ biên tập trong việc nghiên cứu, tiếp thu và hoàn thiện những ý kiến bổ sung, đóng góp của các thành viên trong các kỳ họp trước. Tổ biên tập đã nghiên cứu, rà soát các Nghị quyết, văn bản và nhu cầu thực tế để đề xuất, bổ sung các chính sách phù hợp, tạo các hàng rào kỹ thuật cần thiết để vừa phát triển, vừa bảo vệ môi trường (BVMT).</p><br>
+									<span><i class="fas fa-calendar-alt"></i> Thứ 3, 10/12/2019 - 15:50 GMT+7 <a href="##">xem tiếp >></a></span>
+								</div>
+							</div>
+							<hr>
+							<div class="row">
+								<div class="tintuc_image col-xs-12 col-sm-12 col-md-3">
+									<img src="image/main_tin1.jpg">
+								</div>
+								<div class="tintuc_t col-xs-12 col-sm-12 col-md-9">
+									<a href="##">Bộ trưởng Trần Hồng Hà chủ trì họp Dự án Luật sửa đổi, bổ sung Luật Bảo vệ môi trường</a>
+									<p>​Phát biểu tại cuộc họp, Bộ trưởng Trần Hồng Hà đánh giá cao nỗ lực của các thành viên Ban soạn thảo, Tổ biên tập trong việc nghiên cứu, tiếp thu và hoàn thiện những ý kiến bổ sung, đóng góp của các thành viên trong các kỳ họp trước. Tổ biên tập đã nghiên cứu, rà soát các Nghị quyết, văn bản và nhu cầu thực tế để đề xuất, bổ sung các chính sách phù hợp, tạo các hàng rào kỹ thuật cần thiết để vừa phát triển, vừa bảo vệ môi trường (BVMT).</p><br>
+									<span><i class="fas fa-calendar-alt"></i> Thứ 3, 10/12/2019 - 15:50 GMT+7 <a href="##">xem tiếp >></a></span>
+								</div>
+							</div>
+							<hr>
+							<div class="row">
+								<div class="tintuc_image col-xs-12 col-sm-12 col-md-3">
+									<img src="image/main_tin1.jpg">
+								</div>
+								<div class="tintuc_t col-xs-12 col-sm-12 col-md-9">
+									<a href="##">Bộ trưởng Trần Hồng Hà chủ trì họp Dự án Luật sửa đổi, bổ sung Luật Bảo vệ môi trường</a>
+									<p>​Phát biểu tại cuộc họp, Bộ trưởng Trần Hồng Hà đánh giá cao nỗ lực của các thành viên Ban soạn thảo, Tổ biên tập trong việc nghiên cứu, tiếp thu và hoàn thiện những ý kiến bổ sung, đóng góp của các thành viên trong các kỳ họp trước. Tổ biên tập đã nghiên cứu, rà soát các Nghị quyết, văn bản và nhu cầu thực tế để đề xuất, bổ sung các chính sách phù hợp, tạo các hàng rào kỹ thuật cần thiết để vừa phát triển, vừa bảo vệ môi trường (BVMT).</p><br>
+									<span><i class="fas fa-calendar-alt"></i> Thứ 3, 10/12/2019 - 15:50 GMT+7 <a href="##">xem tiếp >></a></span>
+								</div>
+							</div>
+							<hr>
+							<div class="row">
+								<div class="tintuc_image col-xs-12 col-sm-12 col-md-3">
+									<img src="image/main_tin1.jpg">
+								</div>
+								<div class="tintuc_t col-xs-12 col-sm-12 col-md-9">
+									<a href="##">Bộ trưởng Trần Hồng Hà chủ trì họp Dự án Luật sửa đổi, bổ sung Luật Bảo vệ môi trường</a>
+									<p>​Phát biểu tại cuộc họp, Bộ trưởng Trần Hồng Hà đánh giá cao nỗ lực của các thành viên Ban soạn thảo, Tổ biên tập trong việc nghiên cứu, tiếp thu và hoàn thiện những ý kiến bổ sung, đóng góp của các thành viên trong các kỳ họp trước. Tổ biên tập đã nghiên cứu, rà soát các Nghị quyết, văn bản và nhu cầu thực tế để đề xuất, bổ sung các chính sách phù hợp, tạo các hàng rào kỹ thuật cần thiết để vừa phát triển, vừa bảo vệ môi trường (BVMT).</p><br>
+									<span><i class="fas fa-calendar-alt"></i> Thứ 3, 10/12/2019 - 15:50 GMT+7 <a href="##">xem tiếp >></a></span>
+								</div>
+							</div>
+							<hr>
+							<div class="row">
+								<div class="tintuc_image col-xs-12 col-sm-12 col-md-3">
+									<img src="image/main_tin1.jpg">
+								</div>
+								<div class="tintuc_t col-xs-12 col-sm-12 col-md-9">
+									<a href="##">Bộ trưởng Trần Hồng Hà chủ trì họp Dự án Luật sửa đổi, bổ sung Luật Bảo vệ môi trường</a>
+									<p>​Phát biểu tại cuộc họp, Bộ trưởng Trần Hồng Hà đánh giá cao nỗ lực của các thành viên Ban soạn thảo, Tổ biên tập trong việc nghiên cứu, tiếp thu và hoàn thiện những ý kiến bổ sung, đóng góp của các thành viên trong các kỳ họp trước. Tổ biên tập đã nghiên cứu, rà soát các Nghị quyết, văn bản và nhu cầu thực tế để đề xuất, bổ sung các chính sách phù hợp, tạo các hàng rào kỹ thuật cần thiết để vừa phát triển, vừa bảo vệ môi trường (BVMT).</p><br>
+									<span><i class="fas fa-calendar-alt"></i> Thứ 3, 10/12/2019 - 15:50 GMT+7 <a href="##">xem tiếp >></a></span>
+								</div>
+							</div>
+							<hr>
+							<div class="row">
+								<div class="tintuc_image col-xs-12 col-sm-12 col-md-3">
+									<img src="image/main_tin1.jpg">
+								</div>
+								<div class="tintuc_t col-xs-12 col-sm-12 col-md-9">
+									<a href="##">Bộ trưởng Trần Hồng Hà chủ trì họp Dự án Luật sửa đổi, bổ sung Luật Bảo vệ môi trường</a>
+									<p>​Phát biểu tại cuộc họp, Bộ trưởng Trần Hồng Hà đánh giá cao nỗ lực của các thành viên Ban soạn thảo, Tổ biên tập trong việc nghiên cứu, tiếp thu và hoàn thiện những ý kiến bổ sung, đóng góp của các thành viên trong các kỳ họp trước. Tổ biên tập đã nghiên cứu, rà soát các Nghị quyết, văn bản và nhu cầu thực tế để đề xuất, bổ sung các chính sách phù hợp, tạo các hàng rào kỹ thuật cần thiết để vừa phát triển, vừa bảo vệ môi trường (BVMT).</p><br>
+									<span><i class="fas fa-calendar-alt"></i> Thứ 3, 10/12/2019 - 15:50 GMT+7 <a href="##">xem tiếp >></a></span>
+								</div>
+							</div>
+							<hr>
+							<div class="row">
+								<div class="tintuc_image col-xs-12 col-sm-12 col-md-3">
+									<img src="image/main_tin1.jpg">
+								</div>
+								<div class="tintuc_t col-xs-12 col-sm-12 col-md-9">
+									<a href="##">Bộ trưởng Trần Hồng Hà chủ trì họp Dự án Luật sửa đổi, bổ sung Luật Bảo vệ môi trường</a>
+									<p>​Phát biểu tại cuộc họp, Bộ trưởng Trần Hồng Hà đánh giá cao nỗ lực của các thành viên Ban soạn thảo, Tổ biên tập trong việc nghiên cứu, tiếp thu và hoàn thiện những ý kiến bổ sung, đóng góp của các thành viên trong các kỳ họp trước. Tổ biên tập đã nghiên cứu, rà soát các Nghị quyết, văn bản và nhu cầu thực tế để đề xuất, bổ sung các chính sách phù hợp, tạo các hàng rào kỹ thuật cần thiết để vừa phát triển, vừa bảo vệ môi trường (BVMT).</p><br>
+									<span><i class="fas fa-calendar-alt"></i> Thứ 3, 10/12/2019 - 15:50 GMT+7 <a href="##">xem tiếp >></a></span>
+								</div>
+							</div>
+							<hr>
+							<div class="row">
+								<div class="tintuc_image col-xs-12 col-sm-12 col-md-3">
+									<img src="image/main_tin1.jpg">
+								</div>
+								<div class="tintuc_t col-xs-12 col-sm-12 col-md-9">
+									<a href="##">Bộ trưởng Trần Hồng Hà chủ trì họp Dự án Luật sửa đổi, bổ sung Luật Bảo vệ môi trường</a>
+									<p>​Phát biểu tại cuộc họp, Bộ trưởng Trần Hồng Hà đánh giá cao nỗ lực của các thành viên Ban soạn thảo, Tổ biên tập trong việc nghiên cứu, tiếp thu và hoàn thiện những ý kiến bổ sung, đóng góp của các thành viên trong các kỳ họp trước. Tổ biên tập đã nghiên cứu, rà soát các Nghị quyết, văn bản và nhu cầu thực tế để đề xuất, bổ sung các chính sách phù hợp, tạo các hàng rào kỹ thuật cần thiết để vừa phát triển, vừa bảo vệ môi trường (BVMT).</p><br>
+									<span><i class="fas fa-calendar-alt"></i> Thứ 3, 10/12/2019 - 15:50 GMT+7 <a href="##">xem tiếp >></a></span>
+								</div>
+							</div>
+							<hr>
+							<div class="row">
+								<div class="tintuc_image col-xs-12 col-sm-12 col-md-3">
+									<img src="image/main_tin1.jpg">
+								</div>
+								<div class="tintuc_t col-xs-12 col-sm-12 col-md-9">
+									<a href="##">Bộ trưởng Trần Hồng Hà chủ trì họp Dự án Luật sửa đổi, bổ sung Luật Bảo vệ môi trường</a>
+									<p>​Phát biểu tại cuộc họp, Bộ trưởng Trần Hồng Hà đánh giá cao nỗ lực của các thành viên Ban soạn thảo, Tổ biên tập trong việc nghiên cứu, tiếp thu và hoàn thiện những ý kiến bổ sung, đóng góp của các thành viên trong các kỳ họp trước. Tổ biên tập đã nghiên cứu, rà soát các Nghị quyết, văn bản và nhu cầu thực tế để đề xuất, bổ sung các chính sách phù hợp, tạo các hàng rào kỹ thuật cần thiết để vừa phát triển, vừa bảo vệ môi trường (BVMT).</p><br>
+									<span><i class="fas fa-calendar-alt"></i> Thứ 3, 10/12/2019 - 15:50 GMT+7 <a href="##">xem tiếp >></a></span>
+								</div>
+							</div>
+							<hr>
+							<div class="row">
+								<div class="tintuc_image col-xs-12 col-sm-12 col-md-3">
+									<img src="image/main_tin1.jpg">
+								</div>
+								<div class="tintuc_t col-xs-12 col-sm-12 col-md-9">
+									<a href="##">Bộ trưởng Trần Hồng Hà chủ trì họp Dự án Luật sửa đổi, bổ sung Luật Bảo vệ môi trường</a>
+									<p>​Phát biểu tại cuộc họp, Bộ trưởng Trần Hồng Hà đánh giá cao nỗ lực của các thành viên Ban soạn thảo, Tổ biên tập trong việc nghiên cứu, tiếp thu và hoàn thiện những ý kiến bổ sung, đóng góp của các thành viên trong các kỳ họp trước. Tổ biên tập đã nghiên cứu, rà soát các Nghị quyết, văn bản và nhu cầu thực tế để đề xuất, bổ sung các chính sách phù hợp, tạo các hàng rào kỹ thuật cần thiết để vừa phát triển, vừa bảo vệ môi trường (BVMT).</p><br>
+									<span><i class="fas fa-calendar-alt"></i> Thứ 3, 10/12/2019 - 15:50 GMT+7 <a href="##">xem tiếp >></a></span>
+								</div>
+							</div>
+							<div class="tintuc_congcu">
+								<span>Trang: </span>
+								<select id="slt_htpt" onchange="location = this.value;">
+								</select>
+								<span id="tintuc_congcu_n">Tiếp</span>
+								<span id="tintuc_congcu_p">Cuối</span>
+								<span class="tintuc_search">Tìm theo ngày: <input type="text" name="tintuc_search" value="26/02/2020"> <i class="fas fa-search"></i></span>
+							</div>
+						</div>
+					</div>
+					<!-- thư viện ảnh -->
+					<div class="lybrary">
+						<div class="lbr_group">
+							<h5 class="lbr_h_link nav_qs_h">THƯ VIỆN</h5>
+							<h5 class="lbr_h_link"><a href="##">HÌNH ẢNH</a></h5>
+							<h5 class="lbr_h_link"><a href="##">VIDEO</a></h5>
+						</div>
+						<hr>
+						<div class="lbr_show">
+							<div class="lbr_item lbr_show_item">
+								<img src="image/lbr1.jpg">
+								<a href="##">Dự án vay vốn (Trạm xử lý nước thải tập trung)</a>
+							</div>
+							<div class="lbr_item lbr_show_item">
+								<img src="image/lbr2.jpg">
+								<a href="##">Dự án vay vốn (Trạm xử lý nước thải tập trung)</a>
+							</div>
+							<div class="lbr_item lbr_show_item">
+								<img src="image/lbr3.jpg">
+								<a href="##">Dự án vay vốn (Trạm xử lý nước thải tập trung)</a>
+							</div>
+							<div class="lbr_item">
+								<img src="image/lbr4.jpg">
+								<a href="##">Dự án vay vốn (Trạm xử lý nước thải tập trung)</a>
+							</div>
+							<div class="lbr_item">
+								<img src="image/lbr5.jpg">
+								<a href="##">Dự án vay vốn (Trạm xử lý nước thải tập trung)</a>
+							</div>
+
+							<div class="lbr_bt">
+								<button class="lbr_show_bt" id="lbr_show_bt_left">&lt;</button>
+								<button class="lbr_show_bt" id="lbr_show_bt_right">&gt;</button>
+							</div>
+						</div>
+					</div>
+					<!-- hỏi đáp -->
+
+					<div class="row nav_qs">
+						<h5 class="nav_qs_h">HỎI ĐÁP</h5>
+						<h5><a href="##">GỬI CÂU HỎI</a></h5>
+						<hr>
+						<div class="nav_qs_left col-12 col-md-6">
+							<a class="nav_qs_link"href="##"><span>1. </span>Tôi muốn thực hiện dự án lọc khí thải công nghiệp trước khi thải ra môi trường đang cần nguồn kinh phí hỗ trợ. xin hỏi có nguồn kinh phí nào hộ trợ phát triển dự án không ?</a>
+							<div class="nav_qs_show"><a href="##">Chi tiết</a></div>
+							<a class="nav_qs_link"href="##"><span>3. </span>Kính chào Quỹ bảo vệ môi trường Việt Nam,<br>Tôi từ công ty TNHH Môi trường Sung mun,Hiện tại công ty chúng tôi đang muốn xây dựng hệ thống xử lý nước thải của công ty đặt trong Khu công nghiệp, tôi muốn hỏi điều kiện nào để được vay vốn từ Quỹ và tôi phải tiến hành chuẩn bị những hồ sơ, thủ tục gì để có thể vay vốn ạ?<br>Xin chân thành cảm ơn.</a>
+							<div class="nav_qs_show"><a href="##">Chi tiết</a></div>
+						</div>
+						<div class="col-12 col-md-6">
+							<a class="nav_qs_link"href=""><span>2. </span>Chúng tôi có một dự án nhà máy phát điện xử dụng rác thải cứng ( kể cả công nghiệp và y tế) công nghệ khí hóa bằng Plamas. công xuất 600 tấn ngày ( sản xuất 100.000 MGW điện năm )<br>Tồng vốn đầu tư 60 triệu USD. <br>Xin được hỏi có thể xin hổ trợ về lãi xuất để vay vốn không? <br>Trân trọng !</a>
+							<div class="nav_qs_show"><a href="##">Chi tiết</a></div>
+							<a class="nav_qs_link"href=""><span>4. </span>Tôi muốn đầu tư nhà máy sản xuất gạch không nung.Dây chuyền của công ty Trung Hậu sản xuất trong nước.Công suất 3 triệu viên /năm. Giá dự toán khoảng 3 tỷ. Tôi ở Sơn La có được vay vốn của quỹ bảo vệ môi trường việt Nam không? Nếu được tôi liên hệ như thế nào. Kính mong sự trợ giúp của quỹ bảo vệ môi trường Việt Nam. Xin trân trọng cảm ơn</a>
+							<div class="nav_qs_show"><a href="##">Chi tiết</a></div>
+						</div>
+					</div>
+
+					
+				</div>
+
+				<!-- bên phải -->
+				<div class="col-xs-12 col-sm-12 col-md-12 col-lg-3">
+					<!-- đăng ký vay vốn -->
+					<section class="main_right">
+						<form action="##" method="GET">
+							<h3>ĐĂNG KÝ VAY VỐN</h3>
+							<p>Tên doanh nghiệp <span>*</span></p>
+							<input class="main_right_ip" type="text" name="name_group" placeholder="Điền tên doanh nghiệp ...">
+							<p>Địa chỉ <span>*</span></p>
+							<input class="main_right_ip" type="text" name="name_group" placeholder="Điền địa chỉ ...">
+							<p>Số điện thoại <span>*</span></p>
+							<input class="main_right_ip" type="text" name="name_group" placeholder="Điền Số điện thoại">
+							<p>Tên dự án <span>*</span></p>
+							<input class="main_right_ip" type="text" name="name_group" placeholder="Tên dự án">
+							<p>Tóm tắt nội dung dự án <span>*</span></p>
+							<textarea name="ttnd" placeholder="Điền tóm tắt nội dung ..."></textarea>
+							<input  class="main_right_sub" type="submit" name="sub" value="GỬI THÔNG TIN">
+						</form>
+					</section>
+
+					<!-- các hình ảnh và video -->
+					<section class="right_st">
+						<button id="right_image">Hình ảnh</button>
+						<button id="right_video">Video</button>
+						<hr>
+						<div class="right_st1 right_st1_show">
+							<img src="image/main_tin1.jpg">
+							<a class="right_text" href="##">DỰ ÁN VÀ HOẠT ĐỘNG CDM</a><br>
+							<a class="right_link" href="##">Xem thêm</a>
+						</div>
+						<div class="right_st1 ">
+							<img src="image/main_tin2.jpg">
+							<a class="right_text" href="##">DỰ ÁN VÀ HOẠT ĐỘNG CDM</a><br>
+							<a class="right_link" href="##">Xem thêm</a>
+						</div>
+						<div class="right_st1">
+							<img src="image/main_tin3.jpg">
+							<a class="right_text" href="##">DỰ ÁN VÀ HOẠT ĐỘNG CDM</a><br>
+							<a class="right_link" href="##">Xem thêm</a>
+						</div>
+						<div class="right_st1">
+							<img src="image/main_tin4.jpg">
+							<a class="right_text" href="##">DỰ ÁN VÀ HOẠT ĐỘNG CDM</a><br>
+							<a class="right_link" href="##">Xem thêm</a>
+						</div>
+						<div class="right_st1_video">
+							<img src="image/main_tin3.jpg">
+							<a class="right_text" href="##">DỰ ÁN VÀ HOẠT ĐỘNG CDM</a><br>
+							<a class="right_link" href="##">Xem thêm</a>
+						</div>
+					</section>
+
+					<!-- Hoạt động nghiệp vụ -->
+					<section class="right_st">
+						<h4 class="right_st_h4_1">Hoạt động nghiệp vụ</h4>
+						<div class="right_st_group">
+							<div class="row">
+								<div class="col-3">
+									<img src="image/icon_cachd.png">
+								</div>
+								<div class="col-9">
+									<a href="##">Các hoạt động khác</a>
+								</div>
+							</div>
+						</div>
+						<div class="right_st_group">
+							<div class="row">
+								<div class="col-3">
+									<img src="image/icon_vanphong.png">
+								</div>
+								<div class="col-9">
+									<a href="##">Văn phòng GEF Việt Nam</a>
+								</div>
+							</div>
+						</div>
+						<div class="right_st_group">
+							<div class="row">
+								<div class="col-3">
+									<img src="image/icon_kiquy.png">
+								</div>
+								<div class="col-9">
+									<a href="##">Ký quỹ cải tạo phục hồi môi trường trong khai thác khoáng sản</a>
+								</div>
+							</div>
+						</div>
+						<div class="right_st_group">
+							<div class="row">
+								<div class="col-3">
+									<img src="image/icon_taitro.png">
+								</div>
+								<div class="col-9">
+									<a href="##">Tài trọ và đông tìa trợ</a>
+								</div>
+							</div>
+						</div>
+						<div class="right_st_group">
+							<div class="row">
+								<div class="col-3">
+									<img src="image/icon_chovay.png">
+								</div>
+								<div class="col-9">
+									<a href="##">Cho vay lãi xuất ưu đãi</a>
+								</div>
+							</div>
+						</div>
+					</section>
+
+					<!-- Thống Kê Truy Cập -->
+					<section class="right_st">
+						<h4 class="right_st_h4_1">Thống Kê Truy Cập</h4>
+						<div class="user_login row">
+							<div class="user_login_left col-6">
+								<p>Đang online</p>
+								<p class="user_login_left_nb">3</p>
+							</div>
+							<div class="user_login_right col-6">
+								<p>Lượt truy cập</p>
+								<p class="user_login_right_nb">1933</p>
+							</div>
+						</div>
+					</section>
+
+					<!-- Liên Kết Trang -->
+					<section class="right_st right_st_link">
+						<h4 class="right_st_h4_1">Liên Kết Trang</h4>
+						<div>
+							<select name="right_st_slt1" class="right_st_slt" id="right_st_slt1" onchange="location = this.value;">
+								<option value="right_slt1_0">Các đơn vị tổ chức thuộc Bộ</option>
+							</select>
+							<select name="right_st_slt2" class="right_st_slt" id="right_st_slt2" onchange="location = this.value;">
+								<option value="right_slt1_0">Bộ, Ngành, Địa phương</option>
+							</select>
+						</div>
+					</section>
+				</div>
+			</div>
+		</div>
+	</main>
+	<!-- phần cuối của trang web -->
+	<footer class="container-fluid">
+		<div class="container">
+			<!-- menu ở cuối trang web -->
+			<div class="menu">
+				<div class="home_menu">
+					<a class="link_home_menu" href="index.html">
+						<i class="fas fa-home"></i>
+					</a>
+				</div>
+				<ul class="list_menu">
+					<li class="list_menu_gt">
+						<a href="gioithieu.html">GIỚI THIỆU</a>
+						<ul class="show_menu_footer show_gt">
+							<li>
+								<a href="gioithieu.html">&gt Giới thiệu chung</a>
+							</li>
+							<li>
+								<a href="chucnangnv_gt.html">&gt Chức năng nhiệm vụ</a>
+							</li>
+							<li>
+								<a href="cocautochuc_gt.html">&gt Cơ cấu tổ chức</a>
+							</li>
+							<li>
+								<a href="duan_gt.html">&gt Dự án World Bank</a>
+							</li>
+						</ul>
+					</li>
+					<li class="list_menu_tt">
+						<a href="tintuc.html">TIN TỨC</a>	
+						<ul class="show_menu_footer show_tt">
+							<li>
+								<a href="tinhd.html">&gt Tin hoạt động</a>
+							</li>
+							<li>
+								<a href="tinmt.html">&gt Tin môi trường</a>
+							</li>
+							<li>
+								<a href="##">&gt Tin khoa học công nghệ</a>
+							</li>
+							<li>
+								<a href="##">&gt Tin tức văn phòng GEF Việt Nam</a>
+							</li>
+						</ul>
+					</li>
+					<li class="list_menu_nv">
+						<a href="hoatdongnghiepvu.html">HOẠT ĐỘNG NGHIỆP VỤ</a>
+						<ul class="show_menu_footer show_nv">
+							<li>
+								<a href="chovay.html">&gt Cho vay lãi suất ưu đãi</a>
+							</li>
+							<li>
+								<a href="##">&gt Tài trợ và đông tài trợ</a>
+							</li>
+							<li>
+								<a href="##">&gt Kinh tế xanh</a>
+							</li>
+							<li>
+								<a href="##">&gt Ký quỹ cải tạo phục hồi môi trường trong khai thác khoáng sản</a>
+							</li>
+							<li>
+								<a href="##">&gt Văn phòng GEF Việt Nam</a>
+							</li>
+							<li>
+								<a href="##">&gt Các hoạt động khác</a>
+							</li>
+						</ul>
+					</li>
+					<li class="list_menu_qt">
+						<a href="hoatdongquocte.html">HOẠT ĐỘNG QUỐC TẾ & GEF</a>
+						<ul class="show_menu_footer show_qt">
+							<li>
+								<a href="hoptac_pt.html">&gt Hợp tác phát triển</a>
+							</li>
+							<li>
+								<a href="##">&gt Dự án tài trợ GEF</a>
+							</li>
+						</ul>
+					</li>
+					<li class="list_menu_sp">
+						<a href="hotro.html">HỖ TRỢ KHÁCH HÀNG</a>
+						<ul class="show_menu_footer show_sp">
+							<li>
+								<a href="hotro_kh.html">&gt Hướng dẫn hồ sơ hỗ trợ lãi suất vay vốn sau đầu tư</a>
+							</li>
+							<li>
+								<a href="##">&gt Hướng dẫn hồ sơ ký quỹ</a>
+							</li>
+							<li>
+								<a href="##">&gt Hướng dẫn hồ sơ tài trợ</a>
+							</li>
+							<li>
+								<a href="##">&gt Hướng dẫn hồ sơ vay vốn</a>
+							</li>
+							<li>
+								<a href="##">&gt Hướng dẫn hồ sơ xin hỗ trợ dự án và hoạt động CDM</a>
+							</li>
+							<li>
+								<a href="##">&gt Hướng dẫn hồ sơ xin trợ giá, hỗ trợ giá sản phẩm</a>
+							</li>
+						</ul>
+					</li>
+					<li class="list_menu_bc">
+						<a href="vanbanvabaocao.html">VĂN BẢN QPPL & BÁO CÁO</a>
+						<ul class="show_menu_footer show_bc">
+							<li>
+								<a href="vanban_qppl.html">&gt Văn bản quy phạm pháp luật</a>
+							</li>
+							<li>
+								<a href="##">&gt Văn bản quỹ BVMTVN</a>
+							</li>
+							<li>
+								<a href="##">&gt Báo cáo thường niên</a>
+							</li>
+							<li>
+								<a href="##">&gt Văn phòng GEF Việt Nam</a>
+							</li>
+						</ul>
+					</li>
+
+
+				</ul>
+				<div class="menu_965">
+					<button id="width_965_bt" class="width_965_bt"><i class="fas fa-bars"></i></button>
+				</div>
+				<div class="nav_menu_search">
+					<div class="nav_manu_search_group">
+						<input class="search_menu" type="text" name="search" placeholder="Nhập từ khóa cần tìm ...">
+						<button class="menu_search_bt"><i class="fas fa-search"></i></button>
+					</div>
+				</div>
+			</div>
+			<div class="ft_right_link">
+				<a href="##">Hỏi đáp |</a>
+				<a href="##">Thư viện |</a>
+				<a href="##">Liên hệ |</a>
+				<a href="##">Thư điện tử |</a>
+				<a href="##">RSS |</a>
+				<a href="##">Sơ đồ |</a>
+				<a href="##">Trang quản trị |</a>
+				<a href="##">English</a>
+			</div>
+			<!-- thông tin liên hệ -->
+			<div class="ft_ctn row">
+				<div class="logo_footer col-sm-2">
+					<img src="image/group8d7.png">
+				</div>
+				<div class="col-sm-10">
+					<div class="row">
+						<div class="ft col-xs-12 col-sm-12 col-md-12 col-lg-5">
+							<h4>BẢN QUYỀN @2019 QUỸ BẢO VỆ MÔI TRƯỜNG</h4>
+							<p><span>Trụ sở chính:</span> Tầng 6, Tòa nhà Nhà xuất bản Bản Đồ, B5 Nguyễn Chí Thanh, Đống Đa, Hà Nội</p>
+							<p><span>Email:</span> qbvmtvn@monre.gov.vn</p>
+							<p><span>Điện thoại:</span> (+84)24.37951221 - <span>Fax:</span> (+84)24.39426329</p>
+						</div>
+						<div class="ft_right col-xs-12 col-sm-12 col-md-12 col-lg-5">
+							<div class="ft ft_right_t">
+								<h4>VĂN PHÒNG ĐẠI DIỆN MIỀN NAM</h4>
+								<p><span>Địa chỉ:</span> Phòng A.M01, khu Liên cơ quan Bộ Tài nguyên và Môi trường, 200 Lý Chính Thắng, phường 9, quận 3, tp. Hồ Chí Minh.</p>
+								<p><span>Email:</span> qbvmtvn_mn_vepf@monre.gov.vn</p>
+								<p><span>Điện thoại:</span> (028)35261166</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<script type="text/javascript" src="script/script.js"></script>
+	<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+</body>
+</html>
